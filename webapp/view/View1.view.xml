@@ -1,0 +1,79 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:layout="sap.ui.layout"
+	controllerName="YahooMail.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<tnt:ToolHeader id="toolHeader" class="backColor">
+						<Button id="button0" text="Home" type="Transparent" icon="sap-icon://home" tooltip="Home"/>
+						<Button id="button1" text="Mail" type="Transparent" tooltip="Mail"/>
+						<Button id="button2" text="News" type="Transparent" tooltip="News" press="News"/>
+						<Button id="button3" text="Cricket" type="Transparent" tooltip="Cricket"  press="cricket"/>
+						<Button id="button4" text="Movies" type="Transparent" tooltip="Movies"/>
+						<Button id="button5" text="Style" type="Transparent" tooltip="Style"/>
+						<Button id="button6" text="Flickr" type="Transparent" tooltip="Flickr"/>
+						<Button id="button7" text="Mobile" type="Transparent" tooltip="Mobile"/>
+						<MenuButton id="More" text="More" type="Transparent" tooltip="More">
+							<Menu>
+								<items>
+									<MenuItem text="Yahoo1" tooltip="Yahoo1"/>
+									<MenuItem text="Yahoo2" tooltip="Yahoo2"/>
+									<MenuItem text="Yahoo3" tooltip="Yahoo3"/>
+									<MenuItem text="Yahoo4" tooltip="Yahoo4"/>
+								</items>
+							</Menu>
+						</MenuButton>
+					</tnt:ToolHeader>
+					<form:SimpleForm editable="True">
+						<HBox>
+							<Label id="Yahoo" text="YAHOO!" class="colorChange" tooltip="YahooMail"/>
+							<!--<Input width="500px" placeholder="Search" tooltip="Type Here"></Input>-->
+							<SearchField liveChange="onSearch" width="400px"/>
+							<Button text="Search Web" press="onClick" type="Accept" tooltip="Search Button"/>
+							<OverflowToolbar>
+								<ToolbarSpacer/>
+								<Button id="SignIn" class="boarderCol" icon="sap-icon://employee" text="Sign In" press="onSignIn" type="Transparent"></Button>
+								<Button id="Mail" class="boarderCol" icon="sap-icon://email" text="Mail" type="Transparent" press="handleEmailPress"></Button>
+							</OverflowToolbar>
+						</HBox>
+					</form:SimpleForm>
+					<HBox>
+						<VBox>
+							<Button id="Answers" press="onClick" class="sapUiTinyMarginBegin sapUiMediumMarginTop" text="Answers" type="Transparent"></Button>
+							<Button id="Autos" press="onClick1" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Autos" type="Transparent"></Button>
+							<Button id="Property" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Property" type="Transparent"></Button>
+							<Button id="Flicker" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Flicker" type="Transparent"></Button>
+							<Button id="Mobile" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Mobile" type="Transparent"></Button>
+							<MenuButton id="MoreYahoosites" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="More YAHOO sites" type="Transparent">
+								<Menu>
+									<items>
+										<MenuItem text="{i18n>web1}"/>
+										<MenuItem text="{i18n>web2}"/>
+										<MenuItem text="{i18n>web3}"/>
+										<MenuItem text="{i18n>web4}"/>
+									</items>
+								</Menu>
+							</MenuButton>
+							<Button id="StyleFactor" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Style Factor" type="Transparent"></Button>
+							<Button id="Make" class="sapUiTinyMarginBegin sapUiTinyMarginTop" text="Make YAHOO Your HomePage"></Button>
+						</VBox>
+						<Panel id="list" visible="false">
+							<TextArea
+								value="Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph"
+								rows="50" cols="100" valueLiveUpdate="true"/>
+						</Panel>
+						<Panel id="list1" visible="false">
+							<TextArea
+								value="Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper"
+								rows="50" cols="100" valueLiveUpdate="true"/>
+						</Panel>
+						<TextArea id="list2"
+							value="Yahoo - Home | Yahoo https://www.facebook.com › Places › Sunnyvale, California Yahoo, Sunnyvale, California. 13M likes. The official Facebook page for Yahoo. We share the best content created by our network of properties. Yahoo - YouTube https://www.youtube.com/user/yahoo Television icon Betty White spoke to Yahoo Global News Anchor Katie Couric about the state of the country and the need for positivity. Full story: ... yahoo: Latest News, Videos and Photos | Times of India timesofindia.indiatimes.com/topic/yahoo Yahoo Inc. is an American multinational technology company headquartered in Sunnyvale, California. It was founded by Jerry Yang and David Filo in January ... Yahoo! - Wikipedia https://en.wikipedia.org/wiki/Yahoo! Yahoo! is a web services provider, wholly owned by Verizon Communications through Oath Inc. and headquartered in Sunnyvale, California. The original ... Yahoo Jobs - Naukri.com https://www.naukri.com/yahoo-jobs Apply to 2769 Yahoo Jobs on Naukri.com, India's No.1 Job Portal. Explore Yahoo Openings in your desired locations Now!"
+							rows="50" cols="100" valueLiveUpdate="true"/>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,31 @@
+<mvc:View controllerName="YahooMail.controller.View3" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm editable="true">
+						<Text class="Text_3" text="Create an account"/>
+						<Label class="Label_3" text="First Name"/>
+						<Input placeholder="First Name" width="200px"/>
+						<Label class="Label_3" text="Last Name"/>
+						<Input placeholder="Last Name" width="200px"/>
+						<Label class="Label_3" text="Mobile No"/>
+						<Input width="200px"/>
+						<Label class="Label_3" text="Your Email"/>
+						<Input placeholder="Nxxxxx@Yahoo.com" width="200px"/>
+						<Label class="Label_3" text="Re-Enter Your Email"/>
+						<Input placeholder="Nxxxxx@Yahoo.com" width="200px"/>
+						<Label class="Label_3" text="New Password"/>
+						<Input placeholder="***********" width="200px"/>
+						<Label class="Label_3" text="Gender"/>
+						<Switch state="true" customTextOn="M" customTextOff="F"></Switch>
+						<Label class="Label_3" text="D.O.B"/>
+						<DatePicker width="200px"/>
+					</form:SimpleForm>
+					<Button class="Button1_3" text="Sign Up" type="Emphasized" press="OnClick_3"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

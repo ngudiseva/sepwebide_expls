@@ -1,0 +1,90 @@
+.colorChange {
+    color: purple;
+    font-size: 50pt;
+}
+
+.boarderCol {
+    border-bottom: red;
+}
+
+#__xmlview0--SignIn-inner {
+    color: blue;
+}
+
+#__xmlview0--toolHeader {
+    background: purple;
+}
+
+#__xmlview0--Mail-inner {
+    color: orange;
+}
+
+.colorChange1 {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 100px;
+    color: purple;
+    font-size: 50pt;
+}
+
+.text1 {
+    font-size: 3rem;
+    margin-left: 380px
+}
+
+.text2 {
+    font-size: 2rem;
+    margin-left: 450px;
+}
+
+.Input1_2 {
+    margin-left: 500px;
+    margin-top: 80px;
+}
+
+.Input2_2 {
+    margin-left: 500px;
+}
+
+.but_sign_2 {
+    margin-left: 500px;
+}
+
+.Link1_2 {
+    margin-left: 100px;
+}
+.Link2_2{
+	margin-left:600px;
+}
+
+.check_box {
+    margin-left: 480px;
+}
+
+.Imgclass {
+    margin-left: 575px;
+    margin-bottom: -50px
+}
+.Button1_3{
+	margin-left:550px;
+}
+.Label_3{
+	color:Blue;
+	font-size:1rem;
+	font-style:Inherit;
+}
+.Text_3{
+	font-size:4rem;
+	margin-left:300px;
+}
+/*#__form0--Layout{*/
+/*	background-color:darkseagreen;*/
+/*}*/
+/*//toolbar border//*/
+/*#__container1--RFLayout{*/
+/*	    background-color: lightgreen;*/
+/*}*/
+/*//Body//*/
+#__hbox1{
+	 background-color: pink;
+}

@@ -1,0 +1,29 @@
+<mvc:View controllerName="YahooMail.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Label id="Yahoo" text="YAHOO!" class="colorChange1" tooltip="YahooMail"/>
+					<Text class="text1" text="One account.All of Yahoo"/>
+					<Text class="text2" text="Sign in to continue to Yahoo"/>
+					<VBox>
+						<Image class="sapUiLargeMarginTop Imgclass" src="https://pre00.deviantart.net/67de/th/pre/i/2013/005/7/9/circle_profile_by_pdogkasper-d5qkroq.png" height="150px"/>
+						<!--<ImageContent class="Imgclass"-->
+						<!--	src="https://pre00.deviantart.net/67de/th/pre/i/2013/005/7/9/circle_profile_by_pdogkasper-d5qkroq.png" description="Profile image" press="press"/>-->
+							<Input class="Input1_2" placeholder="Email" width="300px"/>
+							<Input class="Input2_2" placeholder="Password" width="300px"/>
+							<Button id="but_sign_2" class="but_sign_2" text="SignIn" width="300px" press="onClick1" type="Emphasized"/>
+						</VBox>
+						<VBox>
+							<HBox>
+								<CheckBox class="check_box" text="Stay signed in" width="100px" selected="true"/>
+								<Link class="Link1_2" text="Need help??" width="100px" press="handleLinkPress"/>
+							</HBox>
+						</VBox>
+						<Link class="Link2_2" text="Create an account"  press="handleLinkPress1"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</mvc:View>
